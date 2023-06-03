@@ -69,7 +69,7 @@
                         tbodyVideoLists += '<th scope="row">' + dataIndex + '</th>';
                         tbodyVideoLists += '<td>' + links[index]['format'] + '</td>';
                         tbodyVideoLists += '<td>' + links[index]['itag'] + '</td>';
-                        tbodyVideoLists += '<td><a href="' + downloadLink  + '">下載</a></td>';
+                        tbodyVideoLists += '<td><a href="' + downloadLink  + '">download</a></td>';
                         tbodyVideoLists += '</tr>';
                         dataIndex += 1;
                     }
@@ -84,7 +84,7 @@
 <body>
     <main role="main" class="flex-shrink-0">
         <div class="container">
-          <h1 class="mt-5">Web YouTube Downloader</h1>
+          <h1 class="mt-5">YouTube Downloader</h1>
           <div class="row justify-content-left">
             <div class="col-12 col-md-12 col-lg-12">
                 <form class="card card-sm">
@@ -94,12 +94,12 @@
                         </div>
                         <!--end of col-->
                         <div class="col">
-                            <input id="txt_url" class="form-control form-control-lg" type="text" placeholder="請貼上YouTube影片網址">
+                            <input id="txt_url" class="form-control form-control-lg" type="text" placeholder="Please paste the URL of a YouTube video">
                         </div>
                         <!--end of col-->
-                        <div class="col-auto">
-                            <button id="btn_fetch" class="btn btn-lg btn-success" type="button">查詢</button>
-                        </div>
+                        <!--<div class="col-auto">-->
+                            <button id="btn_fetch" class="btn btn-lg btn-success" type="button">search</button>
+                        <!--</div>-->
                         <!--end of col-->
                     </div>
                 </form>
@@ -111,9 +111,9 @@
             <thead class="thead-dark">
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">影片格式</th>
+                <th scope="col">format</th>
                 <th scope="col">itag</th>
-                <th scope="col">影片網址</th>
+                <th scope="col">URL</th>
               </tr>
             </thead>
             <tbody id="video-lists"></tbody>
